@@ -1,0 +1,21 @@
+{
+  "name": "test-webdev",
+  "description": "A description",
+  "main": "index.js",
+  "authors": [
+    "jared"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "siimple": "^1.3.4"
+  }
+}
