@@ -1,1 +1,21 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+.navbar {
+	width: 100%;
+	min-height: 50px;
+	line-height: 50px;
+	background-color: #29A036;
+	color: #ffffff;
+}
+
+.title {
+	margin-left: 20px;
+}
+
+.main {
+	margin-top: 40px;
+	margin-bottom: 0px;
+}
+
+.mycol {
+	background: #eaf0f2;
+	border-radius: 10px;
+}
