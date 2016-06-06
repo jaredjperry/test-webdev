@@ -26,6 +26,10 @@ module.exports = function(grunt) {
                 dest: '_site/',
                 expand: true        // required when using cwd
             }
+        },
+        watch: {
+            files: 'src/*',
+            tasks: 'default'
         }
     });
     
