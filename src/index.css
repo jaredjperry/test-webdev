@@ -2,8 +2,7 @@
 	width: 100%;
 	min-height: 50px;
 	line-height: 50px;
-	background-color: #29A036;
-	color: #ffffff;
+	background-color: #29a036;
 }
 
 .title {
@@ -15,7 +14,12 @@
 	margin-bottom: 0px;
 }
 
-.mycol {
-	background: #eaf0f2;
+.colored-cell {
+	background-color: #29a036; /*#eaf0f2;*/
 	border-radius: 10px;
+}
+
+body {
+	background-color: #165916;
+	color: white;
 }
