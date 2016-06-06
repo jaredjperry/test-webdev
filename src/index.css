@@ -1,3 +1,8 @@
+body {
+	background-color: #165916;
+	color: white;
+}
+
 .navbar {
 	width: 100%;
 	min-height: 50px;
@@ -14,12 +19,22 @@
 	margin-bottom: 0px;
 }
 
-.colored-cell {
+.status-cell {
 	background-color: #29a036; /*#eaf0f2;*/
 	border-radius: 10px;
+	text-align: center;
+	min-height: 240px;
+	max-height: 240px;
 }
 
-body {
-	background-color: #165916;
+.status-cell-content {
+	padding: 15px;
+}
+
+.status-message {
+	padding-top: 15px;
+}
+
+h4 {
 	color: white;
 }
