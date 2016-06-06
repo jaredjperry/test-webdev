@@ -19,12 +19,26 @@ module.exports = function(grunt) {
                 }
             }
         },
+        sasslint: {
+            targets: [ 'src/*.scss' ]
+        },
+        sass: {
+            dist: {
+                files: [{
+                    expand: true,
+                    cwd: 'src',
+                    src: [ '*.scss' ],
+                    dest: '_site/',
+                    ext: '.css'
+                }]
+            }
+        },
         copy: {
             files: {
                 cwd: 'src',
-                src: [ '**/*.html', '**/*.css', '**/*.js' ],
+                src: [ '**/*.html', '**/*.js' ],
                 dest: '_site/',
-                expand: true        // required when using cwd
+                expand: true
             }
         },
         watch: {
@@ -34,5 +48,5 @@ module.exports = function(grunt) {
     });
     
     require('load-grunt-tasks')(grunt);
-    grunt.registerTask('default', ['jshint', 'bower_concat', 'copy']);
+    grunt.registerTask('default', ['jshint', 'bower_concat', 'sasslint', 'sass', 'copy']);
 };
