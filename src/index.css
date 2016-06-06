@@ -21,7 +21,7 @@ body {
 }
 
 .status-cell {
-	background-color: #29a036; /*#eaf0f2;*/
+	background-color: #29a036;
 	border-radius: 10px;
 	text-align: center;
 	padding: 15px;
@@ -39,4 +39,25 @@ body {
 
 h4 {
 	color: white;
+}
+
+.circle {
+	display: inline-block;
+	font-family: FontAwesome;
+	height: 4em;
+	width: 4em;
+	color: white;
+	border-radius: 50%;
+}
+
+.bgred {
+	background: red;
+}
+
+.bgyellow {
+	background: yellow;
+}
+
+.fa-3x {
+	line-height: 68px; /*TODO*/
 }
