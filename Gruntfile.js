@@ -1,13 +1,8 @@
 module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-        jshint: {
-            files: ['Gruntfile.js', 'src/**/*.js', 'test/**/*.js'],
-            options: {
-                globals: {
-                    jQuery: true
-                }
-            }
+        eslint: {
+            target: ['Gruntfile.js', 'src/**/*.js*', 'test/**/*.js*']
         },
         bower_concat: {
             main: {
@@ -48,5 +43,4 @@ module.exports = function(grunt) {
     });
     
     require('load-grunt-tasks')(grunt);
-    grunt.registerTask('default', ['jshint', 'bower_concat', 'sasslint', 'sass', 'copy']);
 };
