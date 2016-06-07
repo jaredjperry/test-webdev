@@ -9,26 +9,7 @@
   </head>
   <body>
     <div id="example"></div>
-    <script type="text/babel">
-
-      var HelloWorld = React.createClass({
-        render: function() {
-          return (
-            <p>
-              Hello, <input type="text" placeholder="Your name here" />!
-              It is {this.props.date.toTimeString()}
-            </p>
-          );
-        }
-      });
-
-      setInterval(function() {
-        ReactDOM.render(
-          <HelloWorld date={new Date()} />,
-          document.getElementById('example')
-        );
-      }, 500);
-
-    </script>
+    <div id="example2"></div>
+    <script type="text/babel" src="reacttest.jsx"></script>
   </body>
 </html>

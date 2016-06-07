@@ -36,7 +36,7 @@ module.exports = function(grunt) {
         copy: {
             files: {
                 cwd: 'src',
-                src: [ '**/*.html', '**/*.js' ],
+                src: [ '**/*.html', '**/*.js*' ],
                 dest: '_site/',
                 expand: true
             }
