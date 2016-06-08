@@ -29,31 +29,27 @@ body {
   background-color: $ltgreen;
   border-radius: 10px;
   padding: 15px;
-  text-align: center;
 }
 
 .status-cell-content {
-  max-height: 240px;
-  min-height: 240px;
   overflow: hidden;
 }
 
 .status-message {
-  margin-top: 15px;
+  float: right;
+  margin-top: 20px;
+  margin-right: 40px;
+}
+
+.service-name {
+  float: left;
 }
 
 h4 {
   color: $textcolor;
 }
 
-.circle {
-  border-radius: 50%;
-  display: inline-block;
-  font-family: FontAwesome;
-  height: 4em;
-  width: 4em;
-}
-
-.fa-3x {
-  line-height: 68px;
+.icon {
+  float: right;
+  margin-right: 40px;
 }
