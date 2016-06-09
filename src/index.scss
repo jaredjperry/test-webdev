@@ -35,21 +35,20 @@ body {
   overflow: hidden;
 }
 
-.status-message {
-  float: right;
-  margin-top: 20px;
-  margin-right: 40px;
-}
-
 .service-name {
   float: left;
+  color: $textcolor;
 }
 
-h4 {
-  color: $textcolor;
+.status-message {
+  float: right;
+  margin-right: 40px;
+  margin-top: 20px;
 }
 
 .icon {
   float: right;
   margin-right: 40px;
+  min-width: 50px;
+  text-align: center;
 }
