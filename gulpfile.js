@@ -13,7 +13,7 @@ gulp.task('eslint', function() {
 });
 
 gulp.task('bower-files-css', function() {
-    return gulp.src(mainBowerFiles({filter: "*.css"}))
+    return gulp.src(mainBowerFiles({filter: '**/*.css'}))
         .pipe(concat('_bower.css'))
         .pipe(gulp.dest('./_site/'));
 });
