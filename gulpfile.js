@@ -39,7 +39,7 @@ gulp.task('copy', function() {
 
 gulp.task('lint', ['eslint', 'sass-lint']);
 
-gulp.task('default', ['lint', 'bower-files-css', 'copy']);
+gulp.task('default', ['lint', 'bower-files-css', 'sass', 'copy']);
 
 //gulp.task('watch', function () {
 //    gulp.watch('src/*.*', allTasks);
