@@ -33,7 +33,7 @@ gulp.task('sass', function() {
 
 gulp.task('copy', function() {
     return gulp
-        .src('./src/*.*')
+        .src('./src/*.+(js|jsx|html)')
         .pipe(gulp.dest('./_site/'));
 });
 
