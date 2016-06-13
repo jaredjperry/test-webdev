@@ -19,10 +19,10 @@ gulp.task('bower-files-css', function() {
 });
 
 gulp.task('sass-lint', function () {
-  gulp.src('./src/*.s+(a|c)ss')
-    .pipe(sassLint())
-    .pipe(sassLint.format())
-    .pipe(sassLint.failOnError())
+    return gulp.src('./src/*.s+(a|c)ss')
+        .pipe(sassLint())
+        .pipe(sassLint.format())
+        .pipe(sassLint.failOnError())
 });
 
 gulp.task('sass', function() {
