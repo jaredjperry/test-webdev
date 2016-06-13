@@ -1,3 +1,5 @@
+/* global require */
+
 var gulp = require('gulp');
 var eslint = require('gulp-eslint');
 var mainBowerFiles = require('main-bower-files');
@@ -6,7 +8,7 @@ var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 
 gulp.task('eslint', function() {
-    return gulp.src('./src/*.js*')
+    return gulp.src(['gulpfile.js', './src/*.js*'])
         .pipe(eslint())
         .pipe(eslint.format())
         .pipe(eslint.failAfterError());
@@ -22,7 +24,7 @@ gulp.task('sass-lint', function () {
     return gulp.src('./src/*.s+(a|c)ss')
         .pipe(sassLint())
         .pipe(sassLint.format())
-        .pipe(sassLint.failOnError())
+        .pipe(sassLint.failOnError());
 });
 
 gulp.task('sass', function() {
